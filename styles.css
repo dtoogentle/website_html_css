@@ -1,0 +1,175 @@
+/* BASE STYLES */
+body {
+    font-family: Roboto Slab Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    /*adding image with url*/
+    background-image: url('https://th.bing.com/th/id/OIP.24T00MDK-RUhFnm1Do5PFwHaFj?w=217&h=180&c=7&r=0&o=5&pid=1.7');
+
+    /*to make the image not to repeat*/
+    background-repeat: no-repeat;
+
+    /*to make the image fit completely*/
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    /*to reduce the brightness of the image*/
+    background-color: rgb(49, 39, 39);
+    background-blend-mode: darken;
+
+    /*to push the footer to the bottom completely*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+
+    /*to hide scrollbar vetically*/
+    overflow-y: hidden;
+
+}
+
+/* ANIMATION */
+/*animation identifier*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+/* HEADER */
+.header {
+    /*to make header times inline and display horizotally*/
+    display: flex;
+
+    /*to make the header items align perfectly*/
+    align-items: center;
+
+    /*to spread out the items*/
+    justify-content: space-between;
+
+    /*to center the header items*/
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*to apply the animation*/
+    animation: fade-in 0.5s;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links {
+    /*removes bullet point*/
+    list-style: none;
+
+    /*to make them(links) display horizotally*/
+    display: flex;
+}
+
+.link-item {
+    /*to add space between the link-items*/
+    margin-right: 25px;
+}
+
+.link {
+    /*to remove ancle tag underline*/
+    text-decoration: none;
+
+    /*to change the ancle tag color*/
+    color: rgb(255, 255, 255, 0.75);
+
+    font-weight: 500;
+    font-size: 14px;
+
+    /*this is used to make a smooth transition
+of the hover property below*/
+    transition: color 0.4s;
+}
+
+.link:hover {
+    color: rgb(255, 255, 255, 1);
+}
+
+
+/* MAIN */
+.main {
+    text-align: center;
+    margin-top: 110px;
+    /*to apply the animation*/
+    animation: fade-in 0.5s;
+}
+
+.heading {
+    font-size: 64px;
+    font-weight: 800;
+    margin: 25px;
+    line-height: 0.9;
+}
+
+.text {
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.form {
+    margin-top: 60px;
+}
+
+.input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    padding-left: 5.0px;
+    border-radius: 6.0px;
+    font-family: inherit;
+    font-size: 17px;
+    outline: none;
+}
+
+.input:focus {
+    opacity: 1px;
+}
+
+.btn {
+    width: 100px;
+    height: 55px;
+    border: none;
+    border-radius: 6.0px;
+    font-family: inherit;
+    font-size: 17px;
+    outline: none;
+    background-color: black;
+    color: rgb(255, 255, 255, 0.75);
+    transition: 0.4s;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+/* FOOTER */
+.footer{
+display: flex;
+justify-content: space-between;
+width: 1150px;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+padding-bottom: 15px;
+border-top: 1px;
+animation: fade-in 0.5s;
+}
+
